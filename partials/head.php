@@ -7,7 +7,7 @@
     <title>Instituto GPA</title>
 
     <!-- Bootstrap 5 -->
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="assets/css/style.css" rel="stylesheet">
@@ -17,6 +17,9 @@
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/82fb0a8c80.js" crossorigin="anonymous"></script>
+
+    <!-- Theme Font -->
+    <link href="assets/font/font.css" rel="stylesheet">
 
 </head>
 
