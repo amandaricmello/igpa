@@ -43,7 +43,7 @@ include_once("partials/head.php");
                                 </span>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Instituto GPA</a></li>
+                                <li><a class="dropdown-item" href="./about-us.php">Instituto GPA</a></li>
                                 <li><a class="dropdown-item" href="#">Governança</a></li>
                                 <li><a class="dropdown-item" href="#">Relatórios</a></li>
                             </ul>

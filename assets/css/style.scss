@@ -9,6 +9,10 @@ $smoothIN : .3s ease-in;
     background-color: $primaryColor !important;
 }
 
+.bg-secondary {
+    background-color: $secondaryColor !important;
+}
+
 .title-color {
     color: $primaryColor !important;
 }
@@ -32,6 +36,13 @@ h6 {
     font-family: 'Gotham' !important;
     font-weight: bold;
     letter-spacing: $letterSpacing
+}
+
+h2 {
+    border-left: $primaryColor 4.5px solid;
+    margin: 0 !important;
+    padding-left: .75rem;
+    line-height: 1 !important;
 }
 
 p {
@@ -187,6 +198,7 @@ footer {
     }
 }
 
+/* HOME */
 #banner {
     img {
         height: 650px;
@@ -253,13 +265,6 @@ footer {
 }
 
 #services {
-    h2 {
-        border-left: $primaryColor 4.5px solid;
-        margin: 0 !important;
-        padding-left: .75rem;
-        line-height: 1 !important;
-    }
-
     .card {
         border: none;
         border-radius: 25px !important;
@@ -337,29 +342,22 @@ footer {
 }
 
 #articles {
-    h2 {
-        border-left: $primaryColor 4.5px solid;
-        margin: 0 !important;
-        padding-left: .75rem;
-        line-height: 1 !important;
-    }
-
     .container-fluid {
         max-width: 1550px !important;
     }
-    
+
     .card {
         height: 400px !important;
         border-radius: 25px !important;
         border: none !important;
     }
-    
+
     .card-img {
         height: 100% !important;
         object-fit: cover !important;
         border-radius: 25px !important;
     }
-    
+
     .card-img-overlay {
         display: flex !important;
         flex-direction: column !important;
@@ -368,7 +366,7 @@ footer {
         background: linear-gradient(0deg, $primaryColor -15.55%, rgba(0, 60, 99, 0.15) 117.98%);
         border-radius: 25px;
         transition: $smoothIN;
-        
+
         &:hover {
             background: $primaryColor;
             transition: $smoothIN;
@@ -395,6 +393,7 @@ footer {
         opacity: 1;
         width: 3em;
         height: 3em;
+
         svg {
             visibility: hidden;
         }
@@ -406,20 +405,21 @@ footer {
         left: -4em;
     }
 
-    
+
     .splide__arrow--next {
         background: url(../icons/right.svg) no-repeat;
         background-size: cover;
     }
-    
+
     .splide__pagination {
         display: none;
     }
-    
+
     @media screen and (max-width: 992px) {
         time {
             margin-bottom: .5rem !important;
         }
+
         .splide__arrow--prev {
             left: 1em !important;
         }
@@ -434,5 +434,155 @@ footer {
 
     label {
         letter-spacing: .015rem !important;
+    }
+}
+
+/* ABOUT US */
+#banner-about-us {
+    position: relative;
+    background-size: cover !important;
+
+    .mask {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        left: 0;
+        top: 0;
+        background: linear-gradient(90deg, #003C63 -26.6%, rgba(0, 43, 64, 0.15) 111.49%);
+    }
+
+    .content {
+        position: relative;
+        z-index: 11;
+    }
+
+    h1,
+    p {
+        color: $white !important;
+    }
+}
+
+#team {
+    h6 {
+        font-weight: normal !important;
+    }
+}
+
+#about-us {
+    .card {
+        margin-top: 2rem;
+        background-color: $primaryColor;
+        padding: 2rem 1rem;
+        border-radius: 15px !important;
+
+        h6, p {
+            color: $white !important;
+        }
+
+        h6 {
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        p {
+            margin-bottom: 0 !important;
+            font-weight: normal;
+        }
+    }
+
+    h5 {
+        margin-top: -3rem;
+        margin-bottom: 1.75rem;
+    }
+
+    .timeline-steps {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap
+    }
+
+    .timeline-steps .timeline-step {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding:  0 1rem
+    }
+
+    @media (min-width:768px) {
+        .timeline-steps .timeline-step:not(:last-child):after {
+            content: "";
+            display: block;
+            border-top: .15rem solid $primaryColor;
+            width: 15rem;
+            position: absolute;
+            left: 6rem;
+            z-index: 9;
+            top: .3125rem
+        }
+
+        .timeline-steps .timeline-step:not(:first-child):before {
+            content: "";
+            display: block;
+            border-top: .15rem solid $primaryColor;
+            width: 15rem;
+            position: absolute;
+            right: 6rem;
+            z-index: 9;
+            top: .3125rem
+        }
+    }
+
+    @media (max-width:767px) {
+        .timeline-steps .timeline-step {
+            margin-top: 6rem !important;
+        }
+    }
+
+    .timeline-steps .timeline-content {
+        width: 100%;
+        z-index: 10;
+        text-align: center
+    }
+
+    .timeline-steps .timeline-content .inner-circle {
+        border-radius: 1.5rem;
+        height: 1rem;
+        width: 1rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $white
+    }
+
+    .timeline-steps .timeline-content .inner-circle:before {
+        content: "";
+        background-color: $white;
+        border: $primaryColor 4px solid;
+        display: inline-block;
+        height: 2rem;
+        width: 2rem;
+        min-width: 2rem;
+        border-radius: 6.25rem;
+    }
+}
+
+#groups {
+    .card {
+        @extend .bg-secondary;
+        padding: 3rem;
+        border-radius: 27px;
+        border: none !important;
+        height: 100%;
+
+        h5, p {
+            color: $white !important;
+        }
+
+        p {
+            font-weight: 300 !important;
+            margin-top: 2rem;
+        }
     }
 }
