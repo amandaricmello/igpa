@@ -19,7 +19,7 @@
     <script src="https://kit.fontawesome.com/82fb0a8c80.js" crossorigin="anonymous"></script>
 
     <!-- Theme Font -->
-    <link href="assets/font/font.css" rel="stylesheet">
+    <link href="assets/css/font.css" rel="stylesheet">
 
 </head>
 

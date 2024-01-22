@@ -3,8 +3,8 @@ include_once("partials/head.php");
 ?>
 
 <header>
-    <div class="d-block bg-white py-3">
-        <div class="container">
+    <div class="d-block bg-white py-4">
+        <div class="container px-md-0">
             <div class="row justify-content-between">
                 <a href="#" class="col-md-2 col-6 px-lg-0">
                     <img class="logo" src="assets/images/logo.png" alt="Logotipo Instituto GPA">
@@ -32,11 +32,11 @@ include_once("partials/head.php");
 
     <div class="d-block bg-primary">
         <nav class="navbar navbar-expand-lg navbar-light container py-0">
-            <div class="container-fluid justify-content-center">
+            <div class="container-fluid justify-content-center px-md-0">
                 <div class="collapse navbar-collapse" id="menu">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
+                    <ul class="navbar-nav justify-content-md-between mb-2 mb-lg-0">
                         <li class="nav-item dropdown" onmouseover="changeIcon(this)" onmouseout="resetIcon(this)">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Quem Somos
                                 <span class="material-symbols-outlined">
                                     expand_more
@@ -49,7 +49,7 @@ include_once("partials/head.php");
                             </ul>
                         </li>
                         <li class="nav-item dropdown" onmouseover="changeIcon(this)" onmouseout="resetIcon(this)">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Alimentação
                                 <span class="material-symbols-outlined">
                                     expand_more
@@ -62,7 +62,7 @@ include_once("partials/head.php");
                             </ul>
                         </li>
                         <li class="nav-item dropdown" onmouseover="changeIcon(this)" onmouseout="resetIcon(this)">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Trabalho
                                 <span class="material-symbols-outlined">
                                     expand_more
@@ -75,7 +75,7 @@ include_once("partials/head.php");
                             </ul>
                         </li>
                         <li class="nav-item dropdown" onmouseover="changeIcon(this)" onmouseout="resetIcon(this)">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Apoio / Parceria
                                 <span class="material-symbols-outlined">
                                     expand_more
