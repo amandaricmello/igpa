@@ -12,20 +12,34 @@ function resetIcon(element) {
 }
 
 
-// Inicializa uma variável para rastrear o estado do menu
+// Initialize a variable to track the menu state
 var menuOpen = false;
 
 function toggleMenu() {
-    // Obtém o elemento span com o ID 'menuSymbol'
+    // Get the span element with the ID 'menu-icon'
     var menuSymbol = document.getElementById('menu-icon');
 
-    // Alterna entre 'menu' e 'menu_open' com base no estado atual do menu
+    // Toggle between 'menu' and 'close' based on the current menu state
     if (menuOpen) {
         menuSymbol.textContent = 'menu';
     } else {
         menuSymbol.textContent = 'close';
     }
 
-    // Inverte o estado do menu
+    // Invert the menu state
     menuOpen = !menuOpen;
 }
+
+var splideArticles = new Splide('.splide-articles', {
+    type: 'loop',
+    perMove: 1,
+    perPage: 4,
+    breakpoints: {
+        640: {
+            perPage: 1,
+        },
+    },
+});
+
+splideArticles.mount();
+
