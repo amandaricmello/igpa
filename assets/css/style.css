@@ -362,12 +362,12 @@ footer .border-white {
   letter-spacing: 0.015rem !important;
 }
 
-/* ABOUT US */
-#banner-about-us {
+/* ABOUT US, GOVERNANCE, REPORTS */
+#banner-about-us, #banner-governance, #banner-reports {
   position: relative;
   background-size: cover !important;
 }
-#banner-about-us .mask {
+#banner-about-us .mask, #banner-governance .mask, #banner-reports .mask {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -376,12 +376,14 @@ footer .border-white {
   top: 0;
   background: linear-gradient(90deg, #003C63 -26.6%, rgba(0, 43, 64, 0.15) 111.49%);
 }
-#banner-about-us .content {
+#banner-about-us .content, #banner-governance .content, #banner-reports .content {
   position: relative;
   z-index: 11;
 }
 #banner-about-us h1,
-#banner-about-us p {
+#banner-about-us p, #banner-governance h1,
+#banner-governance p, #banner-reports h1,
+#banner-reports p {
   color: #fff !important;
 }
 
@@ -486,4 +488,52 @@ footer .border-white {
 #groups .card p {
   font-weight: 300 !important;
   margin-top: 2rem;
+}
+
+#statute p {
+  margin-bottom: 0.25rem !important;
+}
+#statute .line {
+  min-width: 540px;
+  max-width: 100%;
+  height: 1px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  background-color: rgb(0, 43, 64);
+}
+#statute .btn-outline-primary {
+  padding: 0.5rem 1rem !important;
+  color: rgb(0, 43, 64) !important;
+  border: rgb(0, 43, 64) 2px solid !important;
+  font-size: 0.875rem !important;
+}
+#statute .btn-outline-primary:hover {
+  background-color: rgb(0, 43, 64) !important;
+  color: #fff !important;
+}
+
+#reports img {
+  border-radius: 10px;
+  max-width: 75%;
+  margin-bottom: 0.5rem;
+}
+#reports h6 {
+  font-size: 0.875rem !important;
+  margin-bottom: 2rem;
+}
+#reports .border-bottom {
+  border-width: 3px !important;
+}
+#reports .border-secondary {
+  border-color: rgba(20, 20, 20, 0.4) !important;
+}
+#reports .btn-outline-primary {
+  padding: 0.5rem 1rem !important;
+  color: rgb(0, 43, 64) !important;
+  border: rgb(0, 43, 64) 2px solid !important;
+  font-size: 0.75rem !important;
+}
+#reports .btn-outline-primary:hover {
+  background-color: rgb(0, 43, 64) !important;
+  color: #fff !important;
 }/*# sourceMappingURL=style.css.map */

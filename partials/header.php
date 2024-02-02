@@ -44,8 +44,8 @@ include_once("partials/head.php");
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="./about-us.php">Instituto GPA</a></li>
-                                <li><a class="dropdown-item" href="#">Governança</a></li>
-                                <li><a class="dropdown-item" href="#">Relatórios</a></li>
+                                <li><a class="dropdown-item" href="./governance.php">Governança</a></li>
+                                <li><a class="dropdown-item" href="./reports.php">Relatórios</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown" onmouseover="changeIcon(this)" onmouseout="resetIcon(this)">
