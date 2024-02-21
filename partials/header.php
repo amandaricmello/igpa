@@ -5,7 +5,7 @@ include_once("partials/head.php");
 <header>
     <div class="d-block bg-white py-4">
         <div class="container px-md-0">
-            <div class="row justify-content-between">
+            <div class="row justify-content-md-between justify-content-center">
                 <a href="#" class="col-md-2 col-6 px-lg-0">
                     <img class="logo" src="assets/images/logo.png" alt="Logotipo Instituto GPA">
                 </a>
@@ -21,16 +21,16 @@ include_once("partials/head.php");
                         <img src="assets/icons/youtube.svg" alt="Ícone do Youtube">
                     </a>
                 </nav>
-                <button class="navbar-toggler d-md-none d-inline col-3" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleMenu()">
+                <!-- <button class="navbar-toggler d-md-none d-inline col-3" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleMenu()">
                     <span id="menu-icon" class="material-symbols-outlined pt-3">
                         menu
                     </span>
-                </button>
+                </button> -->
             </div>
         </div>
     </div>
 
-    <div class="d-block bg-primary">
+    <!-- <div class="d-block bg-primary">
         <nav class="navbar navbar-expand-lg navbar-light container py-0">
             <div class="container-fluid justify-content-center px-md-0">
                 <div class="collapse navbar-collapse" id="menu">
@@ -115,7 +115,7 @@ include_once("partials/head.php");
                 </div>
             </div>
         </nav>
-    </div>
+    </div> -->
 </header>
 
 <main>

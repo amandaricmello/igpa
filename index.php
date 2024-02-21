@@ -4,11 +4,11 @@ include_once("partials/header.php");
 
 <section id="banner" class="d-block bg-primary">
     <div id="slide-banner" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-indicators">
+        <!-- <div class="carousel-indicators">
             <button type="button" data-bs-target="#slide-banner" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#slide-banner" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#slide-banner" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
+        </div> -->
         <div class="carousel-inner">
             <div class="carousel-item slide1 active">
                 <img src="assets/images/pages/home/banner1.jpg" class="d-block w-100" alt="Banner">
@@ -17,10 +17,10 @@ include_once("partials/header.php");
                         Ampliamos oportunidades, potencializamos relações
                     </h1>
 
-                    <a href="#" class="btn btn-primary">Conheça o Instituto GPA</a>
+                    <!-- <a href="#" class="btn btn-primary">Conheça o Instituto GPA</a> -->
                 </div>
             </div>
-            <div class="carousel-item slide2">
+            <!-- <div class="carousel-item slide2">
                 <img src="assets/images/pages/home/banner2.jpg" class="d-block w-100" alt="Banner">
                 <div class="elipse"></div>
                 <div class="carousel-caption text-end">
@@ -37,12 +37,12 @@ include_once("partials/header.php");
                         Incentivamos ações transformadoras como agentes de mudança em diversas comunidades
                     </h1>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>
 
-<section id="services" class="container py-5">
+<section id="services" class="container py-5 mb-md-4">
     <div class="row justify-content-between pt-4">
         <div class="col-12 mb-5">
             <h2>Frentes de atuação</h2>
@@ -83,7 +83,7 @@ include_once("partials/header.php");
     </div>
 </section>
 
-<section id="articles" class="d-block py-5">
+<!-- <section id="articles" class="d-block py-5">
     <div class="container">
         <div class="row">
             <div class="col-12 mb-5">
@@ -142,9 +142,9 @@ include_once("partials/header.php");
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
-<section id="newsletter" class="bg-light py-5">
+<!-- <section id="newsletter" class="bg-light py-5">
     <div class="container">
         <div class="row">
             <div class="col-md-7">
@@ -171,6 +171,17 @@ include_once("partials/header.php");
                         </div>
                     </div>
                 </form>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<section id="warning" class="bg-light py-5">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-md-7">
+                <h1 class="h1 fw-bold mb-4">Em breve novidades</h1>
+                <p class="text-primary">Estamos trabalhando na construção de um novo site.</p>
             </div>
         </div>
     </div>
